@@ -49,34 +49,38 @@ This will take you to the S3 folder where you can upload your images.
 
 ![](screenshots/6.png)
 
-7) Now you'll want to upload your images. You can upload the dataset we prepared from earlier.
+7) You'll want to create a folder to store you dataset in. Click the link to create folder.
 
 ![](screenshots/7.png)
 
-8) You can select the folders containing the images, and then drag and drop them into your S3 bucket.
+8) Name your folder whatever you would like. In this case we name it dogClassifier.
 
 ![](screenshots/8.png)
 
-9) Once the upload has completed, you can click the button to copy the file path from the top of the page. This path should end in the root folder for the dataset.
+9) You can select the folders containing the images, and then drag and drop them into your S3 bucket. There's a lot of images, so it might take several minutes.
 
 ![](screenshots/9.png)
+
+10) Once the upload has completed, you can click the button in the top right to copy the file path. Ensure you can see the class folders from this directory, as this is important for labelling later.
+
 ![](screenshots/10.png)
 
-10) Paste the filepath from you clipboard. You'll also want to check the checkbox for "Automatically attach a label to my images based on the folder they're stored in."
+11) Then you'll want to click back to the other tab, titled "Create Dataset". Here we will paste the filepath from your clipboard. You'll also want to check the checkbox for "Automatically attach a label to my images based on the folder they're stored in."
 
 ![](screenshots/11.png)
-
-11) Now your images are loaded into your dataset. You'll notice the labels were already created based on the folder structure of your data.
-Now you'll want to train your model based on this data.
-
 ![](screenshots/12.png)
 
-12) When on the train model screen, your model should already be pre-populated. You'll need to choose the dataset you just created, and then click the option for "Split Data Set."
-This will automatically reserve 20% of your dataset to the side, and use it to evaulate the performance of you model.
-
-13) Then you'll want to select "Train." The training process will take at least an hour.
+12) Now your images are loaded into your dataset. You'll notice the labels were already created based on the folder structure of your data.
+Now you'll want to train your model based on this data.
 
 ![](screenshots/13.png)
+
+13) When on the train model screen, your model should already be pre-populated. You'll need to choose the dataset you just created, and then click the option for "Split Data Set."
+This will automatically reserve 20% of your dataset to the side, and use it to evaulate the performance of you model.
+
+14) Then you'll want to select "Train." The training process will take at least an hour.
+
+![](screenshots/14.png)
 
 14) Once your model has been trained, you can click the name to view more information.
 
