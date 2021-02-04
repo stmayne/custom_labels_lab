@@ -1,6 +1,23 @@
 # Custom Labels Lab!
 
-## In todays lab we will be created an Amazon Rekognition Custom Labels model to identify different lego
+## In todays lab we will be created an Amazon Rekognition Custom Labels model to identify different dog breeds!
+### Prerequisites
+You'll need access to a Terminal (Mac/Linux etc) with git and python3 installed.
+
+To prepare the dataset:
+* First, clone this github repository (if you haven't already)!!!NEED TO CHANGE ONCE FINAL REPO IS PUBLISHED!!!
+    git clone https://github.com/aws-samples/custom_labels_lab
+    
+* Next you'll want to download the dataset from Stanford University (If you are on a PC or have issues with curl, you can also paste the link into a browser to download)
+    curl http://vision.stanford.edu/aditya86/ImageNetDogs/images.tar --output images.tar
+
+* Then we want to unpack our .tar file
+    tar -xvf images.tar
+    
+* The original dataset contains 120 classes and 20,000+ images. This is possible to train with custom labels, but it will take many hours. In order to reduce the training time we will trim the classes to 20 and give them easier to read names. To trim the dataset run the following command:
+    python3 trimDataset.py
+    
+### Now let's get started training our model
 
 1) Open to the Rekognition service page in the AWS Console
 2) Then Navigate to the Custom Labels page by clicking the link on the left hand side. (If you don't see any left hand links, press the "hamburger" icon in the top left of the page)
@@ -28,9 +45,11 @@ There are several different ways to create datasets, including uploading and lab
 However, in this case we will upload our images to S3. You'll want to select the option for "Import images from S3 bucket" and then hit the link for "S3 bucket" at the bottom of the page.
 This will take you to the S3 folder where you can upload your images.
 
+**If your machine only has command line access (no UI) then click this follow [these instructions](https://docs.aws.amazon.com/cli/latest/userguide/cli-services-s3-commands.html#using-s3-commands-managing-objects-copy) to see how to upload your images from the AWS Command Line Interface (CLI). Your command should look something like "aws s3 cp Images/ s3://custom-labels-console-us-east-1-dae32e64e4/assets/stanford-dogs/"**
+
 ![](screenshots/6.png)
 
-7) Now you'll want to upload your images. You can upload the unzipped images that are located in this github repository.
+7) Now you'll want to upload your images. You can upload the dataset we prepared from earlier.
 
 ![](screenshots/7.png)
 
@@ -38,7 +57,7 @@ This will take you to the S3 folder where you can upload your images.
 
 ![](screenshots/8.png)
 
-9) Once the upload has completed, you can copy the file path from the top of the page. This path should end in the root folder for the dataset.
+9) Once the upload has completed, you can click the button to copy the file path from the top of the page. This path should end in the root folder for the dataset.
 
 ![](screenshots/9.png)
 ![](screenshots/10.png)
