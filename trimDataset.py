@@ -1,6 +1,12 @@
 #!/usr/bin/env python
 # coding: utf-8
 
+'''
+SPDX-FileCopyrightText: 2021 Stephen Mayne <smayne@amazon.com>
+
+SPDX-License-Identifier: MIT
+'''
+
 import os
 import random
 import shutil

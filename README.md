@@ -1,3 +1,7 @@
+SPDX-FileCopyrightText: 2021 Stephen Mayne <smayne@amazon.com>
+
+SPDX-License-Identifier: MIT
+
 # Custom Labels Lab!
 
 ## In todays lab we will be created an Amazon Rekognition Custom Labels model to identify different dog breeds!
