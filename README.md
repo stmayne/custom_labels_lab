@@ -95,7 +95,7 @@ You can click the botton for "View Test Result" to see more detaied info.
 
 ![](screenshots/16.png)
 
-16) Here you can see each image, and whether or not it was correctly labeled.
+16) Here you can see each image from the test set, and whether or not it was correctly labeled.
 
 ![](screenshots/17.png)
 
