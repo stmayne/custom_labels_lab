@@ -2,7 +2,7 @@ SPDX-FileCopyrightText: 2021 Stephen Mayne <smayne@amazon.com>
 
 SPDX-License-Identifier: MIT
 
-# Custom Labels Lab!
+# Custom Labels Dog Classifier
 
 ## In todays lab we will be created an Amazon Rekognition Custom Labels model to identify different dog breeds!
 ### Prerequisites
@@ -88,21 +88,21 @@ This will automatically reserve 20% of your dataset to the side, and use it to e
 
 14) Once your model has been trained, you can click the name to view more information.
 
-![](screenshots/14.png)
+![](screenshots/15.png)
 
 15) From the model detail screen, you can see information about the overall performance of the model, as well as performance on each individual class of images.
 You can click the botton for "View Test Result" to see more detaied info.
 
-![](screenshots/15.png)
+![](screenshots/16.png)
 
 16) Here you can see each image, and whether or not it was correctly labeled.
 
-![](screenshots/16.png)
+![](screenshots/17.png)
 
 17) You can also select specific outcomes. Here you can see the example of the false positives.
 
-![](screenshots/17.png)
+![](screenshots/18.png)
 
 18) If you wish to start your model, you can go back to the model detail page and find the CLI commands. Be aware that starting your model will cause it to start occuring costs.
 
-![](screenshots/18.png)
+![](screenshots/19.png)
