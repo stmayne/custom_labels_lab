@@ -2,7 +2,7 @@
 # coding: utf-8
 
 '''
-SPDX-FileCopyrightText: 2021 Stephen Mayne <smayne@amazon.com>
+SPDX-FileCopyrightText: 2021 Amazon.com, Inc. <primary@amazon.com>
 
 SPDX-License-Identifier: MIT
 '''
