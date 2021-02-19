@@ -1,4 +1,4 @@
-SPDX-FileCopyrightText: 2021 Amazon.com, Inc. <primary@amazon.com>
+SPDX-FileCopyrightText: Copyright Amazon.com Inc. or its affiliates.
 
 SPDX-License-Identifier: MIT
 
